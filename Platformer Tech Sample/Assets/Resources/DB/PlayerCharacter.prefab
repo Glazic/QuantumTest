@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7983938273834229106}
   - component: {fileID: 7111197849992158610}
   - component: {fileID: 8735769970721242690}
+  - component: {fileID: 1972071664096378619}
+  - component: {fileID: 2596119721972245777}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -280,6 +282,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1395315466474552259}
+--- !u!114 &1972071664096378619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440238943082942806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af62c14c76bdb945bc22661f2246566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    MaxHealth: 100
+    CurrentHealth: 0
+--- !u!114 &2596119721972245777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440238943082942806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f30d9563be69944a524e700d6ddbb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    StartFallY:
+      RawValue: 0
+    IsFalling:
+      Value: 0
+    FallThreshold:
+      RawValue: 65536
+    DamagePerMeter:
+      RawValue: 65536
 --- !u!1001 &1395315466465054371
 PrefabInstance:
   m_ObjectHideFlags: 0

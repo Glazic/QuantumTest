@@ -77,10 +77,13 @@
     <Compile Include="Core\Core.cs" />
     <Compile Include="Frame.User.cs" />
     <Compile Include="FrameContext.User.cs" />
+    <None Include="Platformer\DSL\Signals\OnHealthChaged.qtn" />
     <Compile Include="Platformer\Platform.User.cs" />
     <Compile Include="Platformer\PlatformConfig.cs" />
     <Compile Include="Platformer\PlayerPlatformController.User.cs" />
     <Compile Include="Platformer\PlatformControllerConfig.cs" />
+    <Compile Include="Platformer\Systems\FallDamageSystem.cs" />
+    <Compile Include="Platformer\Systems\HealthSystem.cs" />
     <Compile Include="Platformer\Systems\MovementSystem.cs" />
     <Compile Include="Platformer\Systems\PlatformFollowSystem.cs" />
     <Compile Include="Platformer\Systems\PlatformInertiaSystem.cs" />
@@ -100,6 +103,9 @@
     <EmbeddedResource Include="db.json" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Platformer\DSL\Fall.qtn" />
+    <None Include="Platformer\DSL\Health.qtn" />
+    <None Include="Platformer\DSL\Events\HealthChanged.qtn" />
     <None Include="Platformer\DSL\Input.qtn" />
     <None Include="Platformer\DSL\PlayerLink.qtn" />
   </ItemGroup>

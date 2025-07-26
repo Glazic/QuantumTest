@@ -83,9 +83,52 @@ MonoBehaviour:
         ColliderIndex: 0
         MutableMode: 0
       MutableMode: 0
+    - Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 11371
+        W:
+          RawValue: 64541
+      Position:
+        X:
+          RawValue: 390594
+        Y:
+          RawValue: 217579
+        Z:
+          RawValue: 405667
+      PhysicsMaterial:
+        Id:
+          Value: 0
+      ShapeType: 2
+      SphereRadius:
+        RawValue: 0
+      BoxExtents:
+        X:
+          RawValue: 655360
+        Y:
+          RawValue: 32768
+        Z:
+          RawValue: 32768
+      SmoothSphereMeshCollisions: 0
+      StaticData:
+        Name: BoxStaticCollider
+        Tag: Untagged
+        Layer: 0
+        Asset:
+          Id:
+            Value: 0
+        IsTrigger: 0
+        ColliderIndex: 1
+        MutableMode: 0
+      MutableMode: 0
     MapEntities: []
   Prototypes:
-  - Platform:
+  - Fall: []
+    Health: []
+    Platform:
     - Config:
         Id:
           Value: 4364009648544809453
@@ -173,7 +216,9 @@ MonoBehaviour:
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - Platform:
+  - Fall: []
+    Health: []
+    Platform:
     - Config:
         Id:
           Value: 4502467630023492653
@@ -261,7 +306,9 @@ MonoBehaviour:
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - Platform:
+  - Fall: []
+    Health: []
+    Platform:
     - Config:
         Id:
           Value: 3260775260228423452
@@ -349,7 +396,9 @@ MonoBehaviour:
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - Platform:
+  - Fall: []
+    Health: []
+    Platform:
     - Config:
         Id:
           Value: 1675473896151211967
@@ -437,7 +486,9 @@ MonoBehaviour:
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
-  - Platform:
+  - Fall: []
+    Health: []
+    Platform:
     - Config:
         Id:
           Value: 1675473896151211967

@@ -1,0 +1,5 @@
+component Health 
+{
+	Int32 MaxHealth;
+	Int32 CurrentHealth;
+}

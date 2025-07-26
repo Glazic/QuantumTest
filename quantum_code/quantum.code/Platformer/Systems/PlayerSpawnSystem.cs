@@ -24,6 +24,10 @@
             {
                 transform->Position.X = 0 + player;
             }
+
+            frame.Unsafe.TryGetPointer<Health>(entity, out Health* health);
+            health->CurrentHealth = health->MaxHealth;
+            frame.Events.HealthChanged(entity, health->CurrentHealth);
         }
     }
 }

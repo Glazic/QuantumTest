@@ -77,6 +77,7 @@
     <Compile Include="Core\Core.cs" />
     <Compile Include="Frame.User.cs" />
     <Compile Include="FrameContext.User.cs" />
+    <None Include="Platformer\DSL\Events\Death.qtn" />
     <None Include="Platformer\DSL\Signals\OnHealthChaged.qtn" />
     <Compile Include="Platformer\Platform.User.cs" />
     <Compile Include="Platformer\PlatformConfig.cs" />

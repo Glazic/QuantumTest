@@ -17,12 +17,12 @@ namespace Quantum.Platformer.Systems
         {
             FP currentY = f.Transform->Position.Y;
 
-            if (!f.Fall->IsFalling && currentY > f.Fall->StartFallY + FP._0_01)
+            if (!f.Fall->IsFalling && !f.CharacterController->Grounded && f.CharacterController->Velocity.Y < 0)
             {
                 f.Fall->IsFalling = true;
                 f.Fall->StartFallY = currentY;
             }
-            if (f.Fall->IsFalling && f.CharacterController->Grounded)
+            else if (f.Fall->IsFalling && f.CharacterController->Grounded)
             {
                 FP fallDistance = f.Fall->StartFallY - currentY;
 
@@ -30,7 +30,7 @@ namespace Quantum.Platformer.Systems
                 {
                     int damage = (int)((fallDistance - f.Fall->FallThreshold) * f.Fall->DamagePerMeter);
                     frame.Signals.OnHealthChanged(f.Entity, damage);
-                    Quantum.Log.Debug($"FallDistance {fallDistance} Damage {damage}");
+                    Quantum.Log.Debug($"Fall fallDistance {fallDistance} damage {damage}");
                 }
                 f.Fall->IsFalling = false;
             }

@@ -1,0 +1,5 @@
+event HealthChanged
+{
+	EntityRef Entity;
+	Int32 CurrentHeath;
+}

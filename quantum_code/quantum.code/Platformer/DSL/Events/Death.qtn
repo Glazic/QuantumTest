@@ -1,0 +1,5 @@
+event Death
+{
+	EntityRef Entity;
+	player_ref Player;
+}

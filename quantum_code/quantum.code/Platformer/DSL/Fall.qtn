@@ -1,0 +1,7 @@
+component Fall
+{
+	FP StartFallY;
+	QBoolean IsFalling;
+	FP FallThreshold;
+	FP DamagePerMeter;
+}

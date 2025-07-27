@@ -1,0 +1,1 @@
+﻿signal OnHealthChanged(EntityRef Entity, Int32 HealthChange);
